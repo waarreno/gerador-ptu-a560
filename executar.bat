@@ -1,4 +1,3 @@
-```batch
 @echo off
 chcp 65001 > nul
 cls
@@ -33,4 +32,3 @@ echo.
 
 echo.
 pause
-```
