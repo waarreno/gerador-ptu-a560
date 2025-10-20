@@ -1,0 +1,41 @@
+{
+  "name": "gerador-ptu-a560",
+  "version": "1.0.0",
+  "description": "Gerador de arquivos PTU A560 para Notas de Débito e Crédito (NDC) no padrão Unimed",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PTU",
+    "A560",
+    "Unimed",
+    "NDC",
+    "XML",
+    "boleto",
+    "saude"
+  ],
+  "author": "Wárreno Hendrick Costa Lima Guimarães",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^6.0.1",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1",
+    "xlsx": "^0.18.5",
+    "xmlbuilder2": "^3.1.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
