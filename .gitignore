@@ -40,10 +40,9 @@ Thumbs.db
 nodejs-portable/
 
 # Arquivos Excel de teste (manter apenas o template)
-dados.xlsx
+!dados.xlsx
 *.xlsx
 *.xls
-!template.xlsx
 
 # Arquivos gerados
 *.zip
