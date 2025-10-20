@@ -53,10 +53,10 @@ gerador-ptu-a560/
 ├── output/                    # Diretório de saída (gerado automaticamente)
 ├── logs/                      # Logs de processamento (opcional)
 ├── dados.xlsx                 # Arquivo Excel padrão (não incluído)
-├── executar.bat              # Script para Windows (Node.js portátil)
-├── package.json              # Dependências do projeto
-├── .gitignore                # Arquivos ignorados pelo Git
-└── README.md                 # Este arquivo
+├── executar.bat               # Script para Windows (Node.js portátil)
+├── package.json               # Dependências do projeto
+├── .gitignore                 # Arquivos ignorados pelo Git
+└── README.md                  # Este arquivo
 ```
 
 ## 🎯 Uso
@@ -254,6 +254,7 @@ MIT License
 ## 👨‍💻 Autor
 
 **Wárreno Hendrick Costa Lima Guimarães**
+
 Coordenador de Contas Médicas
 
 ---
