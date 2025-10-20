@@ -34,7 +34,7 @@ class ProcessadorPTUA560 {
     console.log(chalk.cyan.bold('\n╔══════════════════════════════════════╗'));
     console.log(chalk.cyan.bold('║   Gerador PTU A560 - Lote de NDC     ║'));
     console.log(chalk.cyan.bold('╚══════════════════════════════════════╝\n'));
-    console.log(chalk.gray('(c) 2025 Wárreno Hendrick Costa Lima Guimarães\n'));
+    console.log(chalk.gray('(c) 2025 Warreno Hendrick Costa Lima Guimaraes\n'));
 
     try {
       let arquivoEntrada;
@@ -42,7 +42,7 @@ class ProcessadorPTUA560 {
 
       // Verificar se existe arquivo padrão
       if (this.arquivoPadraoExiste()) {
-        console.log(chalk.green(`✓ Arquivo padrão encontrado: dados.xlsx\n`));
+        console.log(chalk.green(`✓ Arquivo padrao encontrado: dados.xlsx\n`));
         
         const respostas = await inquirer.prompt([
           {
@@ -58,7 +58,7 @@ class ProcessadorPTUA560 {
             when: (answers) => !answers.usarPadrao,
             validate: (input) => {
               if (!input) return 'Por favor, informe o caminho do arquivo';
-              if (!fs.existsSync(input)) return 'Arquivo não encontrado';
+              if (!fs.existsSync(input)) return 'Arquivo nao encontrado';
               if (!input.match(/\.(xlsx|xls)$/i)) return 'Arquivo deve ser .xlsx ou .xls';
               return true;
             }
@@ -75,7 +75,7 @@ class ProcessadorPTUA560 {
         compactar = respostas.compactar;
       } else {
         // Se não existir arquivo padrão, solicitar caminho
-        console.log(chalk.yellow(`⚠️  Arquivo dados.xlsx não encontrado na pasta raiz\n`));
+        console.log(chalk.yellow(`⚠️  Arquivo dados.xlsx nao encontrado na pasta raiz\n`));
         
         const respostas = await inquirer.prompt([
           {
@@ -84,7 +84,7 @@ class ProcessadorPTUA560 {
             message: 'Caminho do arquivo Excel de origem:',
             validate: (input) => {
               if (!input) return 'Por favor, informe o caminho do arquivo';
-              if (!fs.existsSync(input)) return 'Arquivo não encontrado';
+              if (!fs.existsSync(input)) return 'Arquivo nao encontrado';
               if (!input.match(/\.(xlsx|xls)$/i)) return 'Arquivo deve ser .xlsx ou .xls';
               return true;
             }
@@ -103,7 +103,7 @@ class ProcessadorPTUA560 {
 
       await this.processar(arquivoEntrada, compactar);
     } catch (erro) {
-      console.error(chalk.red('\n❌ Erro na aplicação:'), erro.message);
+      console.error(chalk.red('\n❌ Erro na aplicacao:'), erro.message);
       process.exit(1);
     }
   }
@@ -193,7 +193,7 @@ class ProcessadorPTUA560 {
    */
   exibirRelatorioFinal(totalRegistros) {
     console.log(chalk.cyan('\n╔══════════════════════════════════════╗'));
-    console.log(chalk.cyan('║        RELATÓRIO FINAL               ║'));
+    console.log(chalk.cyan('║        RELATORIO FINAL               ║'));
     console.log(chalk.cyan('╚══════════════════════════════════════╝\n'));
 
     console.log(chalk.white(`  📊 Total de registros: ${totalRegistros}`));
