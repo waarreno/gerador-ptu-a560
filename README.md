@@ -409,3 +409,5 @@ Para dúvidas, problemas ou sugestões:
 **Versão:** 1.0.0  
 **Última atualização:** Outubro 2025  
 **Node.js recomendado:** v22.12.0
+
+Feito com ❤️ para a área de Contas Médicas da Unimed Cerrado
