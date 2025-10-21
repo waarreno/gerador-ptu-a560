@@ -31,7 +31,7 @@ Este projeto permite a geração em lote de arquivos XML PTU A560, facilitando o
 2. Crie/edite o arquivo `dados.xlsx` na pasta raiz com seus dados
 3. **Execute o arquivo `executar.bat`**
 4. Pronto! O sistema irá automaticamente:
-   - ✅ Baixar o Node.js v22.20.0 (se necessário)
+   - ✅ Baixar o Node.js v22.12.0 (se necessário)
    - ✅ Instalar todas as dependências (se necessário)
    - ✅ Iniciar a aplicação
 
@@ -370,6 +370,8 @@ Copyright (c) 2025 Wárreno Hendrick Costa Lima Guimarães
 **Wárreno Hendrick Costa Lima Guimarães**
 
 Coordenador de Contas Médicas  
+
+
 ---
 
 ## 🤝 Contribuições
@@ -406,4 +408,4 @@ Para dúvidas, problemas ou sugestões:
 
 **Versão:** 1.0.0  
 **Última atualização:** Outubro 2025  
-**Node.js recomendado:** v22.20.0
+**Node.js recomendado:** v22.12.0
