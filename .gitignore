@@ -1,13 +1,16 @@
-# Logs
+# Arquivos de log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 *.log
 
-# Diretórios de saída
+# Diretórios de saída gerados
 output/
 dist/
 build/
+
+# Logs da aplicação
+logs/
 
 # Arquivos temporários
 *.tmp
@@ -30,15 +33,33 @@ Thumbs.db
 .classpath
 .settings/
 
-# Arquivos Excel de teste (exceto dados.xlsx que deve ser mantido)
+# Arquivos Excel gerados (manter apenas dados.xlsx e templates)
 *.xlsx
 *.xls
 !dados.xlsx
 !template.xlsx
 
-# Arquivos gerados
-*.zip
+# Arquivos XML e ZIP gerados
+output/*.xml
+output/*.zip
 *.xml
+*.zip
+
+# Sistema operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Backup
+*.bak
+*.backup
+
+# Arquivo ZIP temporário do Node.js (usado durante instalação)
+node-portable.zip
 
 # Sistema operacional
 .DS_Store
